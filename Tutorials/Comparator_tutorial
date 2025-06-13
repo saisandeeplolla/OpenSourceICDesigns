@@ -1,0 +1,94 @@
+v {xschem version=3.4.7 file_version=1.2}
+G {}
+K {}
+V {}
+S {}
+E {}
+N 230 -400 230 -360 {lab=#net1}
+N 360 -440 360 -400 {lab=#net1}
+N 230 -400 360 -400 {lab=#net1}
+N 360 -400 510 -400 {lab=#net1}
+N 510 -400 510 -360 {lab=#net1}
+N 230 -300 230 -240 {lab=#net2}
+N 510 -300 510 -250 {lab=#net3}
+C {title.sym} -40 50 0 0 {name=l1 author="Sai Sandeep Lolla
+"}
+C {ipin.sym} -440 -310 0 0 {name=p1 lab=PLUS
+}
+C {ipin.sym} -440 -280 0 0 {name=p2 lab=MINUS
+
+}
+C {ipin.sym} -290 -300 0 0 {name=p3 lab=VCC
+
+
+}
+C {ipin.sym} -290 -270 0 0 {name=p4 lab=VSS
+
+
+
+}
+C {ipin.sym} -440 -220 0 0 {name=p5 lab=ADJ
+
+
+
+}
+C {ipin.sym} -440 -180 0 0 {name=p6 lab=EN_N
+
+
+
+}
+C {ipin.sym} -130 -300 0 0 {name=p7 lab=DIFF_OUT
+
+
+
+
+
+}
+C {sg13g2_pr/sg13_lv_pmos.sym} 340 -470 0 0 {name=M1
+l=0.13u
+w=0.15u
+ng=1
+m=1
+model=sg13_lv_pmos
+spiceprefix=X
+}
+C {sg13g2_pr/sg13_lv_pmos.sym} 530 -330 0 1 {name=M2
+l=0.13u
+w=0.15u
+ng=1
+m=1
+model=sg13_lv_pmos
+spiceprefix=X
+}
+C {sg13g2_pr/sg13_lv_pmos.sym} 210 -330 0 0 {name=M3
+l=0.13u
+w=0.15u
+ng=1
+m=1
+model=sg13_lv_pmos
+spiceprefix=X
+}
+C {sg13g2_pr/sg13_lv_nmos.sym} 720 -330 0 0 {name=M4
+l=0.13u
+w=0.15u
+ng=1
+m=1
+model=sg13_lv_nmos
+spiceprefix=X
+}
+C {sg13g2_pr/sg13_lv_nmos.sym} 210 -210 0 0 {name=M5
+l=0.13u
+w=0.15u
+ng=1
+m=1
+model=sg13_lv_nmos
+spiceprefix=X
+}
+C {sg13g2_pr/sg13_lv_nmos.sym} 530 -220 0 1 {name=M6
+l=0.13u
+w=0.15u
+ng=1
+m=1
+model=sg13_lv_nmos
+spiceprefix=X
+}
