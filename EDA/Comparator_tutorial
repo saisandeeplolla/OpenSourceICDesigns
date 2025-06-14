@@ -9,8 +9,30 @@ N 360 -440 360 -400 {lab=#net1}
 N 230 -400 360 -400 {lab=#net1}
 N 360 -400 510 -400 {lab=#net1}
 N 510 -400 510 -360 {lab=#net1}
-N 230 -300 230 -240 {lab=#net2}
-N 510 -300 510 -250 {lab=#net3}
+N 230 -270 230 -240 {lab=#net2}
+N 510 -270 510 -240 {lab=#net3}
+N 230 -270 300 -270 {lab=#net2}
+N 230 -300 230 -270 {lab=#net2}
+N 300 -270 300 -210 {lab=#net2}
+N 270 -210 300 -210 {lab=#net2}
+N 440 -270 510 -270 {lab=#net3}
+N 510 -300 510 -270 {lab=#net3}
+N 440 -270 440 -210 {lab=#net3}
+N 440 -210 470 -210 {lab=#net3}
+N 230 -180 230 -120 {lab=VSS}
+N 510 -180 510 -120 {lab=VSS}
+N 360 -120 510 -120 {lab=VSS}
+N 360 -120 360 -30 {lab=VSS}
+N 230 -120 360 -120 {lab=VSS}
+N 360 -640 360 -500 {lab=VCC}
+N 170 -330 190 -330 {lab=MINUS}
+N 550 -330 590 -330 {lab=PLUS}
+N 510 -210 620 -210 {lab=VSS}
+N 110 -210 230 -210 {lab=VSS}
+N 230 -330 330 -330 {lab=VCC}
+N 430 -330 510 -330 {lab=VCC}
+N 360 -470 450 -470 {lab=VSS}
+N 250 -470 320 -470 {lab=EN_N}
 C {title.sym} -40 50 0 0 {name=l1 author="Sai Sandeep Lolla
 "}
 C {ipin.sym} -440 -310 0 0 {name=p1 lab=PLUS
@@ -18,11 +40,11 @@ C {ipin.sym} -440 -310 0 0 {name=p1 lab=PLUS
 C {ipin.sym} -440 -280 0 0 {name=p2 lab=MINUS
 
 }
-C {ipin.sym} -290 -300 0 0 {name=p3 lab=VCC
+C {ipin.sym} -450 -360 0 0 {name=p3 lab=VCC
 
 
 }
-C {ipin.sym} -290 -270 0 0 {name=p4 lab=VSS
+C {ipin.sym} -440 -130 0 0 {name=p4 lab=VSS
 
 
 
@@ -44,51 +66,38 @@ C {ipin.sym} -130 -300 0 0 {name=p7 lab=DIFF_OUT
 
 
 }
-C {sg13g2_pr/sg13_lv_pmos.sym} 340 -470 0 0 {name=M1
-l=0.13u
-w=0.15u
-ng=1
-m=1
-model=sg13_lv_pmos
-spiceprefix=X
+C {lab_pin.sym} 360 -640 0 0 {name=p8 sig_type=std_logic lab=VCC
 }
-C {sg13g2_pr/sg13_lv_pmos.sym} 530 -330 0 1 {name=M2
-l=0.13u
-w=0.15u
-ng=1
-m=1
-model=sg13_lv_pmos
-spiceprefix=X
+C {lab_pin.sym} 430 -330 0 0 {name=p10 sig_type=std_logic lab=VCC
+
 }
-C {sg13g2_pr/sg13_lv_pmos.sym} 210 -330 0 0 {name=M3
-l=0.13u
-w=0.15u
-ng=1
-m=1
-model=sg13_lv_pmos
-spiceprefix=X
+C {lab_pin.sym} 360 -30 0 0 {name=p9 sig_type=std_logic lab=VSS
+
 }
-C {sg13g2_pr/sg13_lv_nmos.sym} 720 -330 0 0 {name=M4
-l=0.13u
-w=0.15u
-ng=1
-m=1
-model=sg13_lv_nmos
-spiceprefix=X
+C {lab_pin.sym} 170 -330 0 0 {name=p11 sig_type=std_logic lab=MINUS
+
+
 }
-C {sg13g2_pr/sg13_lv_nmos.sym} 210 -210 0 0 {name=M5
-l=0.13u
-w=0.15u
-ng=1
-m=1
-model=sg13_lv_nmos
-spiceprefix=X
+C {lab_pin.sym} 590 -330 2 0 {name=p12 sig_type=std_logic lab=PLUS
+
+
+
 }
-C {sg13g2_pr/sg13_lv_nmos.sym} 530 -220 0 1 {name=M6
-l=0.13u
-w=0.15u
-ng=1
-m=1
-model=sg13_lv_nmos
-spiceprefix=X
+C {lab_pin.sym} 110 -210 0 0 {name=p13 sig_type=std_logic lab=VSS
+
+}
+C {lab_pin.sym} 330 -330 2 0 {name=p14 sig_type=std_logic lab=VCC
+
+
+}
+C {lab_pin.sym} 620 -210 2 0 {name=p15 sig_type=std_logic lab=VSS
+
+}
+C {lab_pin.sym} 450 -470 2 0 {name=p16 sig_type=std_logic lab=VSS
+
+}
+C {lab_pin.sym} 250 -470 0 0 {name=p17 sig_type=std_logic lab=EN_N
+
+
+
 }
